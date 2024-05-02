@@ -1,0 +1,23 @@
+<%- include ("../partials/header.ejs"); %>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Your Dogs</title>
+    <link rel="stylesheet" href="/stylesheets/addDogs.css">
+</head>
+<body>
+    <div class = "add dog post">
+        <form  action="/addDog" method="post">
+            <label for="title">Post title:</label>
+            <input type="text" placeholder="Please enter dog name" id="title" name="title" required>
+            <label for="email">Contact email</label>
+            <input type="text" placeholder="Please enter contact email" id="email" name="email" required>
+            <label for="body">Post body</label>
+            <textarea id="body" placeholder="Please enter information about your dog." name="body" required></textarea>
+            <button>Submit</button>
+        </form>
+    </div>
+</body>
+</html>

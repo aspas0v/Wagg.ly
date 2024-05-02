@@ -1,0 +1,29 @@
+<%- include ("../partials/header.ejs"); %>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dogs</title>
+    <link rel="stylesheet" href="/stylesheets/dogs.css">
+</head>
+<body>
+    <div class="dog posts">
+        <h2>All Dogs</h2>
+        <% if (locals.dogPosts && locals.dogPosts.length > 0) { %>
+            <% for(dogPost of locals.dogPosts) { %>
+                <% console.log(dogPost) %>
+                <h3 class="title"><%- dogPost.title %></h3>
+                <p class="email"><%-dogPost.email %></p>
+                <p class="body"><%-dogPost.body %></p>
+
+            <%}%>
+        <% } else { %>
+            <p>There are no posts!</p>
+        <% } %> 
+
+    </div>
+
+</body>
+</html>

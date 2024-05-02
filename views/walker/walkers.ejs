@@ -1,0 +1,30 @@
+<%- include ("../partials/header.ejs"); %>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Walkers</title>
+    <link rel="stylesheet" href="/stylesheets/walker.css">
+</head>
+<body>
+    <div class="walker posts">
+        <h2>All Walkers</h2>
+
+        <% if (locals.walkerPosts && locals.walkerPosts.length > 0) { %>
+            <% for(walkerPost of locals.walkerPosts) { %>
+                <% console.log(walkerPost) %>
+                <h3 class="title"><%- walkerPost.title %></h3>
+                <p class="email"><%- walkerPost.email %></p>
+                <p class="body"><%- walkerPost.body %></p>
+
+            <%}%>
+        <% } else { %>
+            <p>There are no posts!</p>
+        <% } %> 
+
+    </div>
+
+</body>
+</html>
