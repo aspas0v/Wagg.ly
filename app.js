@@ -25,7 +25,7 @@ app.use(express.json())
 app.use(express.static('public'))
 app.use(express.urlencoded())
 
-//pages
+//All Routes initialising 
 app.use(indexRouter)
 app.use(dogsRouter)
 app.use(walkerRouter)
