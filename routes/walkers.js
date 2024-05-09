@@ -3,7 +3,7 @@ const router = express.Router()
 const walkerPost = require('../models/walkerPost')
 
 
-
+//API GET walkerpost & route to Walker page
 router.get('/walkers', (req , res) => {
     walkerPost.find()
         .then((result) => {

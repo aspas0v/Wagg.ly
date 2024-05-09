@@ -3,7 +3,7 @@ const dogPost = require('../models/dogPost')
 const router = express.Router()
 
 
-
+//API GET dogpost & route to dog page
 router.get('/dogs', (req , res) => {
     dogPost.find()
         .then((result) => {
