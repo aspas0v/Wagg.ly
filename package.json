@@ -4,7 +4,7 @@
   "description": "Dog walking app with cloud integreation ",
   "main": "app.js",
   "scripts": {
-    "test": "node app.js",
+    "start": "node app.js",
     "devStart": "nodemon app.js"
   },
   "author": "Andrej Spasov",

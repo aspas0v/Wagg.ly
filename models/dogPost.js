@@ -1,6 +1,7 @@
 const mongoose  = require('mongoose')
 const Schema = mongoose.Schema
 
+//Shema for dog posts
 const dogSchema = new Schema({
     title: {
         type: String,
